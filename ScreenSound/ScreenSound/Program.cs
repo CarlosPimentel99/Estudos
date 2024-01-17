@@ -1,63 +1,27 @@
-﻿using ScreenSound;
-using System.ComponentModel;
+﻿using ScreenSound.Domain.MenuPrincipal;
 
-var _pularLinha = "\n";
-
-// execução do programa
-IniciarAplicacao();
-
-
-void IniciarAplicacao()
+public class Program
 {
-    Console.Write(@"
+    private static void Main(string[] args) =>
+
+        // execução do programa
+        IniciarAplicacao();
+
+
+    public static void IniciarAplicacao()
+    {
+        Console.Write(@"
 ░██████╗░█████╗░██████╗░███████╗███╗░░██╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
 ██╔════╝██╔══██╗██╔══██╗██╔════╝████╗░██║████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
 ╚█████╗░██║░░╚═╝██████╔╝█████╗░░██╔██╗██║██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
 ░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██║╚████║██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
 ██████╔╝╚█████╔╝██║░░██║███████╗██║░╚███║██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
 ╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
-    Console.Write(_pularLinha);
-    Console.WriteLine("Seja bem vindo ao Screen Sound!!!!");
-    ExibirMenu();
-}
+        Console.Write("\n");
+        Console.WriteLine("Seja bem vindo ao Screen Sound!!!!");
 
-void ExibirMenu()
-{
-    Console.Write(_pularLinha);
-    foreach (Menu opcao in Enum.GetValues(typeof(Menu)))
-    {
-        string descricao = ObterDescricaoDoMenu(opcao);
-        Console.WriteLine($"Digite {opcao.GetHashCode()} para {descricao}");
+        var gerenciadorMenu = new GerenciadorDeMenu();
+
+        gerenciadorMenu.ExibirMenu();        
     }
-
-    Console.Write(_pularLinha + "Digite a opção desejada: ");
-    var opcaoEscolhida = int.Parse(Console.ReadLine()!);
-
-    ValidarOpcaoDoMenuEscolhida(opcaoEscolhida);
-
-}
-
-string ObterDescricaoDoMenu(Menu opcao)
-{
-    var memberInfo = typeof(Menu).GetMember(opcao.ToString());
-    var descriptionAttribute = (DescriptionAttribute)Attribute.GetCustomAttribute(memberInfo[0], typeof(DescriptionAttribute));
-
-    return descriptionAttribute?.Description ?? opcao.ToString();
-}
-
-
-static void ValidarOpcaoDoMenuEscolhida(int opcaoEscolhida)
-{
-    if (opcaoEscolhida == Menu.Sair.GetHashCode())
-    {
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhida);
-    } else if (opcaoEscolhida == Menu.RegistrarUmaBanda.GetHashCode())
-    {
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhida);
-    }
-    else
-    {
-        Console.WriteLine("Nenhuma opção valida foi digitada!!!");
-    }
-
 }
