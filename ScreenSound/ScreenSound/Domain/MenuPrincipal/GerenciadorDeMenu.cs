@@ -6,8 +6,38 @@ namespace ScreenSound.Domain.MenuPrincipal;
 public class GerenciadorDeMenu : Public
 {
 
+    public GerenciadorDeBanda _gerenciadorDeBanda;
+
+    public int DelayMenu
+    {
+        get
+        {
+            return 3000;
+        }
+    }
+
+    public GerenciadorDeBanda GerenciadorBanda
+    {
+        get
+        {
+            if (_gerenciadorDeBanda is null)
+                _gerenciadorDeBanda = new GerenciadorDeBanda();
+
+            return _gerenciadorDeBanda;
+        }
+    }
+
     public void ExibirMenu()
     {
+        Console.Write(@"
+░██████╗░█████╗░██████╗░███████╗███╗░░██╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
+██╔════╝██╔══██╗██╔══██╗██╔════╝████╗░██║████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
+╚█████╗░██║░░╚═╝██████╔╝█████╗░░██╔██╗██║██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
+░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██║╚████║██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
+██████╔╝╚█████╔╝██║░░██║███████╗██║░╚███║██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
+        Console.Write("\n");
+        Console.WriteLine("Seja bem vindo ao Screen Sound!!!!");
         Console.Write(PularLinha);
         foreach (Menu opcao in Enum.GetValues(typeof(Menu)))
         {
@@ -33,18 +63,13 @@ public class GerenciadorDeMenu : Public
     public void ValidarOpcaoDoMenuEscolhida(int opcaoEscolhida)
     {
 
-        var gerenciadorDeBanda = new GerenciadorDeBanda();
-
         switch (opcaoEscolhida)
         {
             case 1:
-                gerenciadorDeBanda.RegistrarBanda();
-                Thread.Sleep(5000);
-                Console.Clear();
-                ExibirMenu();
+                GerenciadorBanda.RegistrarBanda();
                 break;
             case 2:
-                Console.WriteLine("Você escolheu a opção " + opcaoEscolhida);
+                GerenciadorBanda.ExibirBandasCadastradas();
                 break;
             case 3:
                 Console.WriteLine("Você escolheu a opção " + opcaoEscolhida);
@@ -59,6 +84,10 @@ public class GerenciadorDeMenu : Public
                 Console.WriteLine("Opção Inválida!!");
                 break;
         }
+
+        Thread.Sleep(DelayMenu);
+        Console.Clear();
+        ExibirMenu();
 
     }
 }
