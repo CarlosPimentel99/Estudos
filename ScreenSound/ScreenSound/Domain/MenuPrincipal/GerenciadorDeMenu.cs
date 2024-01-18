@@ -29,13 +29,7 @@ public class GerenciadorDeMenu : Public
 
     public void ExibirMenu()
     {
-        Console.Write(@"
-░██████╗░█████╗░██████╗░███████╗███╗░░██╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
-██╔════╝██╔══██╗██╔══██╗██╔════╝████╗░██║████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
-╚█████╗░██║░░╚═╝██████╔╝█████╗░░██╔██╗██║██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
-░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██║╚████║██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
-██████╔╝╚█████╔╝██║░░██║███████╗██║░╚███║██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
-╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
+        ExibirLogoProjeto();
         Console.Write("\n");
         Console.WriteLine("Seja bem vindo ao Screen Sound!!!!");
         Console.Write(PularLinha);
@@ -52,6 +46,17 @@ public class GerenciadorDeMenu : Public
 
     }
 
+    private static void ExibirLogoProjeto()
+    {
+        Console.Write(@"
+░██████╗░█████╗░██████╗░███████╗███╗░░██╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
+██╔════╝██╔══██╗██╔══██╗██╔════╝████╗░██║████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
+╚█████╗░██║░░╚═╝██████╔╝█████╗░░██╔██╗██║██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
+░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██║╚████║██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
+██████╔╝╚█████╔╝██║░░██║███████╗██║░╚███║██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
+    }
+
     public string ObterDescricaoDoMenu(Menu opcao)
     {
         var memberInfo = typeof(Menu).GetMember(opcao.ToString());
@@ -66,16 +71,20 @@ public class GerenciadorDeMenu : Public
         switch (opcaoEscolhida)
         {
             case 1:
+                ExibirApresentacaoMenu("Registros de Bandas");
                 GerenciadorBanda.RegistrarBanda();
                 break;
             case 2:
+                ExibirApresentacaoMenu("Bandas cadastradas");
                 GerenciadorBanda.ExibirBandasCadastradas();
                 break;
             case 3:
-                Console.WriteLine("Você escolheu a opção " + opcaoEscolhida);
+                ExibirApresentacaoMenu("Avaliar Bandas");
+                GerenciadorBanda.AvaliarUmaBanda();
                 break;
             case 4:
-                Console.WriteLine("Você escolheu a opção " + opcaoEscolhida);
+                ExibirApresentacaoMenu("Ver média das Bandas");
+                GerenciadorBanda.ExibirMediaDaBanda();
                 break;
             case -1:
                 Console.WriteLine("Você escolheu a opção Sair, ATÉ MAIS :)");
@@ -85,9 +94,24 @@ public class GerenciadorDeMenu : Public
                 break;
         }
 
-        Thread.Sleep(DelayMenu);
+        Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
         Console.Clear();
         ExibirMenu();
 
+    }
+
+    public void ExibirApresentacaoMenu(string titulo)
+    {
+        var quantidadeDeCaracteres = titulo.Length;
+        var stringDeAsteriscos = String.Empty.PadLeft(quantidadeDeCaracteres, '*');
+
+        Console.Clear();
+        ExibirLogoProjeto();
+        Console.WriteLine(PularLinha);
+        Console.WriteLine(stringDeAsteriscos);
+        Console.WriteLine(titulo);
+        Console.WriteLine(stringDeAsteriscos);
+        Console.WriteLine(PularLinha);
     }
 }
