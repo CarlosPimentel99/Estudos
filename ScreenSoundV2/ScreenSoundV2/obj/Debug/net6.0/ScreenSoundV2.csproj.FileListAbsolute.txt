@@ -1,0 +1,14 @@
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\bin\Debug\net6.0\ScreenSoundV2.exe
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\bin\Debug\net6.0\ScreenSoundV2.deps.json
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\bin\Debug\net6.0\ScreenSoundV2.runtimeconfig.json
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\bin\Debug\net6.0\ScreenSoundV2.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\bin\Debug\net6.0\ScreenSoundV2.pdb
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.AssemblyInfoInputs.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.AssemblyInfo.cs
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.csproj.CoreCompileInputs.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\refint\ScreenSoundV2.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.pdb
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ScreenSoundV2.genruntimeconfig.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSoundV2\ScreenSoundV2\obj\Debug\net6.0\ref\ScreenSoundV2.dll
