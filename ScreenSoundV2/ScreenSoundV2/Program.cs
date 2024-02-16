@@ -1,15 +1,19 @@
-﻿Musica musica1 = new Musica();
+﻿using ScreenSoundV2.Classes;
+using System.Reflection;
 
-musica1.Nome = "Wind of change";
-musica1.Artista = "Scorpions";
-musica1.Duracao = 265;
-musica1.Disponivel = true;
+var banda = new Banda(nome: "Queen");
 
-Musica musica2 = new Musica();
-musica2.Nome = "Ana Julia";
-musica2.Artista = "Los Hermanos";
-musica2.Duracao = 199;
-musica1.Disponivel = false;
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
+var albumDoQueen = new Album(nome: "A night at the opera");
+
+var musica1 = new Musica(banda, nome: "Love of my life");
+musica1.Duracao = 213;
+
+var musica2 = new Musica(banda, nome: "Bohemiam Rhapsody");
+musica2.Duracao = 354;
+
+albumDoQueen.AdicionaMusica(musica1);
+albumDoQueen.AdicionaMusica(musica2 );
+
+banda.AdicionarAlbum(albumDoQueen);
+banda.ExibirDiscografia();

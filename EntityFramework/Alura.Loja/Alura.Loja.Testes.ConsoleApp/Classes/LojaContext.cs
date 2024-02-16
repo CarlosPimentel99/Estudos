@@ -1,5 +1,4 @@
 ﻿using Alura.Loja.Testes.ConsoleApp.Classes.Promocao;
-using Alura.Loja.Testes.ConsoleApp.Conexao;
 using Microsoft.EntityFrameworkCore;
 
 namespace Alura.Loja.Testes.ConsoleApp

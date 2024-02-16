@@ -1,12 +1,7 @@
 ﻿using Alura.Loja.Testes.ConsoleApp.Classes.Promocao;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Linq;
-using System.Runtime.Remoting;
 
 namespace Alura.Loja.Testes.ConsoleApp
 {

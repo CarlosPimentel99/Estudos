@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ImportandadoDadosExcel\\ImportandadoDadosExcel\\ImportandadoDadosExcel.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ImportandadoDadosExcel\\ImportandadoDadosExcel\\ImportandadoDadosExcel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ImportandadoDadosExcel\\ImportandadoDadosExcel\\ImportandadoDadosExcel.csproj",
+        "projectName": "ImportandadoDadosExcel",
+        "projectPath": "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ImportandadoDadosExcel\\ImportandadoDadosExcel\\ImportandadoDadosExcel.csproj",
+        "packagesPath": "C:\\Users\\carlos.pimentel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ImportandadoDadosExcel\\ImportandadoDadosExcel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\carlos.pimentel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

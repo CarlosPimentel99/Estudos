@@ -1,15 +1,18 @@
-﻿class Musica
+﻿using ScreenSoundV2.Classes;
+
+public class Musica
 {
-    public string Nome { get; set; }
-    public string Artista { get; set; }
+
+    public string Nome { get; }
+    public Banda Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
-    public string DescricaoResumida
+    public string DescricaoResumida => Nome + " - " + Artista;
+
+    public Musica(Banda artista, string nome)
     {
-        get
-        {
-            return Nome + " - " + Artista;
-        }
+        Artista = artista;
+        Nome = nome;
     }
 
     public void ExibirFichaTecnica()
