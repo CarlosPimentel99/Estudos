@@ -1,0 +1,14 @@
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\bin\Debug\net6.0\ScreenSound-IntegrationAPI.exe
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\bin\Debug\net6.0\ScreenSound-IntegrationAPI.deps.json
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\bin\Debug\net6.0\ScreenSound-IntegrationAPI.runtimeconfig.json
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\bin\Debug\net6.0\ScreenSound-IntegrationAPI.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\bin\Debug\net6.0\ScreenSound-IntegrationAPI.pdb
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.AssemblyInfoInputs.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.AssemblyInfo.cs
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.csproj.CoreCompileInputs.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\refint\ScreenSound-IntegrationAPI.dll
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.pdb
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ScreenSound-IntegrationAPI.genruntimeconfig.cache
+C:\Users\carlos.pimentel\Documents\Desenvolvimento\ScreenSound-IntegrationAPI\ScreenSound-IntegrationAPI\obj\Debug\net6.0\ref\ScreenSound-IntegrationAPI.dll

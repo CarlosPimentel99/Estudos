@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ScreenSound-IntegrationAPI/1.0.0": {
+        "runtime": {
+          "ScreenSound-IntegrationAPI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ScreenSound-IntegrationAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
