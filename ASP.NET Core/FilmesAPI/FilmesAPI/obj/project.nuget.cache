@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LSEqaikYOJpzwndekSNzl0VUZJd3beNTvqXHMShv2RQp44BTDH6ohv4S6FZXeRWcL7/GeYnzTO24t8W6XrMuww==",
+  "dgSpecHash": "OoHz8s55+8n6z8GtKrrwurQSDVsNzcfL9298O7KSLjHvAO/8/Wih6Ce/rmGe7cmfHyfI/ULls15yHwVP1UNLqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\carlos.pimentel\\Documents\\Desenvolvimento\\ASP.NET Core\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\carlos.pimentel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\carlos.pimentel\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\carlos.pimentel\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.28\\microsoft.entityframeworkcore.6.0.28.nupkg.sha512",
     "C:\\Users\\carlos.pimentel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.28\\microsoft.entityframeworkcore.abstractions.6.0.28.nupkg.sha512",

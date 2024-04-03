@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // CONECTION WITH DATABASE
 var connectionString = builder.Configuration.GetConnectionString("FilmeConnection");
 builder.Services.AddDbContext<FilmeContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //
 
 // Add services to the container.
